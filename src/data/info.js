@@ -1,6 +1,6 @@
 export const personalInfo = {
   name: "Isaac Santos de Sousa",
-  role: "Desenvolvedor Back-end & DevOps",
+  role: "Desenvolvedor Back-end",
   about: "Tenho 18 anos, sou técnico em Desenvolvimento de Sistemas pelo SENAI Suíço Brasileiro. Descobri que sou fascinado pela programação Back-end, arquitetura de software e lógica. No meu TCC, liderei como Scrum-Master, e fiquei responsável pela arquitetura Back-end em Java e pelo DevOps de uma aplicação educacional gamificada.",
   social: {
     github: "https://github.com/isaacdev07",
