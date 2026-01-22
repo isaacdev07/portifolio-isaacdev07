@@ -46,7 +46,7 @@ export const projects = [
   {
     title: "Senai Skill Up",
     description: "Plataforma de perguntas e respostas gamificada inspirada no Kahoot. Atuei como Fullstack, liderando a API em Java/Spring e contribuindo significativamente no Front-end com React.",
-    tags: ["Java Spring", "React", "PostgreSQL", "DevOps"],
+    tags: ["Java Spring", "React", "mySQL", "DevOps"],
     links: {
       back: "https://github.com/TCC-Senai3/senai-skillup.backend.git",
       front: "https://github.com/TCC-Senai3/front-end-web.git"
