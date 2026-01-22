@@ -1,22 +1,22 @@
 import React, { useState } from 'react';
-// Importando os ícones necessários
-import { Terminal, Database, Layout, Cpu, Coffee, Globe, X, Server } from 'lucide-react';
+// Adicionei 'Languages' nos imports
+import { Terminal, Database, Layout, Cpu, Coffee, Globe, X, Server, Languages } from 'lucide-react';
 import { skills } from '../data/info';
 
 export default function Skills() {
-  // Estado para controlar o modal
   const [selectedSkill, setSelectedSkill] = useState(null);
 
-  // Função para escolher o ícone baseado no nome ou tipo
   const getIcon = (skill) => {
+    // Se o nome tiver Java, prioriza o café
     if (skill.name.includes("Java")) return <Coffee size={24} />;
     
     switch (skill.type) {
         case 'Back-end': return <Terminal size={24} />;
         case 'Database': return <Database size={24} />;
         case 'Front-end': return <Layout size={24} />;
-        case 'Infra': return <Server size={24} />; // Ícone de servidor para DevOps
+        case 'Infra': return <Server size={24} />;
         case 'Fullstack': return <Globe size={24} />;
+        case 'Idioma': return <Languages size={24} />; // <--- Ícone novo aqui
         default: return <Cpu size={24} />;
     }
   };
@@ -32,8 +32,8 @@ export default function Skills() {
           </p>
         </div>
 
-        {/* Grid de Skills Interativo */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+        {/* Grid ajustado para lg:grid-cols-6 para caber o item novo */}
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
           {skills.map((skill, index) => (
             <button 
               key={index}
@@ -48,13 +48,17 @@ export default function Skills() {
               <span className="font-medium text-slate-200 group-hover:text-blue-400 transition-colors text-sm">
                 {skill.name}
               </span>
+              {/* Badgezinha opcional para identificar o tipo visualmente */}
+              <span className="text-[10px] text-slate-500 uppercase tracking-wider">
+                {skill.type}
+              </span>
             </button>
           ))}
         </div>
 
       </div>
 
-      {/* --- MODAL (Janela Flutuante) --- */}
+      {/* --- MODAL --- */}
       {selectedSkill && (
         <div 
             className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-sm transition-all"
