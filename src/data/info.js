@@ -26,6 +26,11 @@ export const skills = [
     description: "Configuração de pipelines de CI/CD, containerização de aplicações com Docker e orquestração básica. Gosto de automatizar processos de deploy para garantir agilidade e estabilidade."
   },
   { 
+    name: "Inglês", 
+    type: "Idioma", 
+    description: "Nível Intermediário (B1/B2). Consigo ler documentações técnicas internacionais, assistir tutoriais e manter comunicação escrita clara em contextos profissionais."
+  },
+  { 
     name: "Integração Front-Back", 
     type: "Fullstack",
     description: "Compreensão clara de como o cliente consome o servidor. Resolução de problemas de CORS, padronização de JSONs de resposta e autenticação via Token (JWT)."
@@ -40,8 +45,11 @@ export const skills = [
 export const projects = [
   {
     title: "Senai Skill Up",
-    description: "Plataforma de perguntas e respostas gamificada inspirada no Kahoot. Fui responsável pela API, modelagem do banco de dados e pipeline de DevOps.",
-    tags: ["Java Spring", "SQL", "DevOps", "API Rest"],
-    link: "https://github.com/TCC-Senai3/senai-skillup.backend.git"
+    description: "Plataforma de perguntas e respostas gamificada inspirada no Kahoot. Atuei como Fullstack, liderando a API em Java/Spring e contribuindo significativamente no Front-end com React.",
+    tags: ["Java Spring", "React", "PostgreSQL", "DevOps"],
+    links: {
+      back: "https://github.com/TCC-Senai3/senai-skillup.backend.git",
+      front: "https://github.com/TCC-Senai3/front-end-web.git"
+    }
   }
 ];
