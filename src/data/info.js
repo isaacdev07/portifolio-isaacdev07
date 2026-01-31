@@ -13,7 +13,7 @@ export const skills = [
   { 
     name: "Java Spring", 
     type: "Back-end",
-    description: "Desenvolvimento de APIs robustas utilizando o ecossistema Spring (Boot, Data JPA, Security). Foco em injeção de dependências, tratamento de exceções, arquitetura em camadas e boas práticas REST."
+    description: "Desenvolvimento de APIs robustas utilizando o ecossistema Spring (Boot, Data JPA, Security). Foco em injeção de dependências, tratamento de exceções, arquitetura em camadas e boas práticas REST, RESTFULL."
   },
   { 
     name: "SQL / Bancos de Dados", 
